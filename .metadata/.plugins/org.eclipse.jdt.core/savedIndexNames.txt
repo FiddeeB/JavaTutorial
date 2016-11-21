@@ -1,0 +1,7 @@
+INDEX VERSION 1.129+C:\Users\fredr\OneDrive\Kodning\Java\JavaTutorial\.metadata\.plugins\org.eclipse.jdt.core
+2440097375.index
+3276047726.index
+1658707461.index
+529350375.index
+2178987511.index
+2656309523.index
