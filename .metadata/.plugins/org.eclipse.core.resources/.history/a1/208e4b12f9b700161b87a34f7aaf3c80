@@ -1,0 +1,17 @@
+
+
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+import javax.swing.*;
+import javax.swing.text.*;
+
+private JTextArea area = new JTextArea(20,120);
+private JFileChooser dialog = new JFileChooser(System.getProperty("user.dir"));
+private String currentFile = "Untitled";
+private boolean changed = false;
+
+
+public application() {
+				
+}
