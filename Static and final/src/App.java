@@ -1,0 +1,58 @@
+
+class Thing {
+	public final static int LUCKY_NUMBER = 13; // final static. Numret är samma
+												// överallt och kan inte
+												// påvärkas
+	public String name; // Vanlig string
+	public static String description; // Static string
+
+	public static int count = 0; // Skapar ett static int värde som är samma
+									// över allt
+
+	public int id; // Skapar ett id. alla object har olika id
+
+	public Thing() { // Constructor. Körs alltid varje gång kod hämtas.
+		id = count;
+		count++; // Ökar static int värde med ett för varje gång någon kallar på
+					// Thing. osv
+	}
+
+	public void showName() {
+		System.out.println("Object id: " + id + ", " + description + ": " + name);
+	}
+
+	public static void showInfo() {
+		System.out.println("Hello");
+		System.out.println(description);
+	}
+}
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Thing.description = "i am nice"; // Kallar på en static string
+		Thing.showInfo(); // Kallar på en static void
+		System.out.println("Befor creating object count is " + Thing.count);
+
+		Thing thing1 = new Thing();
+		Thing thing2 = new Thing();
+
+		System.out.println("After creating objects count is " + Thing.count);
+
+		thing1.name = "Bobby"; // sätter ett value till variabel
+		thing2.name = "Jens"; // sätter ett value till variabel
+
+		thing1.showName();
+		thing2.showName();
+
+		System.out.println(thing2.name); // Skickar ut ett vanligt variabel som
+											// har ett value
+
+		System.out.println(Math.PI);
+
+		System.out.println(Thing.LUCKY_NUMBER);
+
+	}
+
+}

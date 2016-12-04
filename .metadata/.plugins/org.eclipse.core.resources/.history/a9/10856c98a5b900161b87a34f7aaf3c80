@@ -1,0 +1,23 @@
+class American {
+	public static void printAmerican(String day, String date, int month, int year) {
+		System.out.println(day + ", " + date + ", " + month + ", " + year);
+	}
+}
+public class app {
+
+	private static final String Saturday = null;
+
+	public static void main(String[] args) {
+		int day, date, month, year;
+		day = 49;
+		date = 03;
+		month = 12;
+		year = 2016;
+		
+		System.out.println("What day is it?");
+		System.out.println(year + "/" + month + "/" + date + " Vecka:" + day);
+		
+
+	}
+
+}

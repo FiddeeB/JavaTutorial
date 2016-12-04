@@ -1,0 +1,14 @@
+
+public class application {
+
+	public static void main(String[] args) {
+		int hour, minute;
+		hour = 13;
+		minute = 45;
+		
+		System.out.println("What time is it?");
+		System.out.println("The time is:" + hour + ":" + minute);
+		
+	}
+
+}

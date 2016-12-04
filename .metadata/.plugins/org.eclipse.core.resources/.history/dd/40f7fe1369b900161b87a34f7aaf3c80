@@ -1,0 +1,12 @@
+
+public class app {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] values = {1, 4, 6, 243}; //One dimensional array
+		System.out.println(values[3]);
+
+	}
+
+}

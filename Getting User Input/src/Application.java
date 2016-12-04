@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //inporterar scannern
 
 public class Application {
 
@@ -6,7 +6,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		
-		input = new Scanner(System.in);
+		input = new Scanner(System.in); //skapar scanner
 		
 		//output promp
 		System.out.println("Enter an floatingpoint value: ");

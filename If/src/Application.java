@@ -3,28 +3,28 @@ public class Application {
 
 	public static void main(String[] args) {
 		
-		int myInt = 15;
+		int myInt = 15; //Sätter myInt till 15
 		
-		if(myInt < 10) {
+		if(myInt < 10) { //sätter ett if statement på om myint är större än 10
 			System.out.println("Yes, its true!");
 		}
-		else if(myInt > 20){
+		else if(myInt > 20){ //Sätter ett om annat if statement på om myint är mindre än 15
 			System.out.println("no, its false");
 		}
-		else{
+		else{ //sätter ett else statement om inget av ovanstående är sanna.
 			System.out.println("None of the above");
 		}
 		
-		int loop = 0;
+		int loop = 0; //sätter int med variablen loop till = 0
 		
-		while(true){
-			System.out.println("Looping: " + loop);
+		while(true){ //sätter en while loop med boolean true
+			System.out.println("Looping: " + loop); //printar text + värdet på loop
 			
-			if(loop == 15) {
-				break;
+			if(loop == 15) { //säger att om loop är 15 så avbryts loopen
+				break; //break avbryter
 			}
-			loop++;
-			System.out.println("Running");
+			loop++; //säger att loopen ska öka med 1 för varje loop
+			System.out.println("Running"); //Säger att den ska printa running en gång för varje loop
 		}
 	}
 

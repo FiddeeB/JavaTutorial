@@ -1,0 +1,29 @@
+
+public class application {
+
+	public static void main(String[] args) {
+		String[] words = new String [3]; //skapar en string med 3 array värden
+		
+		words[0] = "Hello"; //Värde 1
+		words[1] = "Tja"; // värde 2
+		words[2] = "Tjena"; //värde 3
+		
+		System.out.println(words[2]); //printar värde 2
+		
+		String[] fruits = {"hej", "på", "dej."}; //Sätter en ny string array med tre värden
+		
+		for(String fruit: fruits) { //sätter fruit på varje array i stringen fruits
+			System.out.println(fruit);
+		}
+		int value = 123;
+		
+		String text = null;
+		System.out.println(text);
+		
+		String[] texts = new String[2];
+				System.out.println(texts[0]);
+			texts[0] = "three";
+			
+	}
+
+}

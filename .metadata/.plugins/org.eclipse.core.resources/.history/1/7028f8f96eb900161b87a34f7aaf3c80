@@ -1,0 +1,56 @@
+
+class Person {
+
+	// instance variables (Data or "state")
+	int age;
+	String name;
+
+	// Classes can contain
+
+	// 1. Data
+	// 2. Subroutines (Methods)
+	void speak() {
+		System.out.println("Hello!");
+	}
+}
+
+class HundRas {
+	String name;
+	String ras;
+	int age;
+
+}
+
+public class app {
+
+	public static void main(String[] args) {
+
+		Person person1 = new Person();
+		person1.name = "Fredrik Beckman";
+		person1.age = 19;
+		person1.speak();
+
+		Person person2 = new Person();
+		person2.name = "Anders Johanson";
+		person2.age = 24;
+
+		System.out.print(person1.name);
+		System.out.print(" ");
+		System.out.println(person2.name);
+
+		HundRas hundras1 = new HundRas();
+		hundras1.name = "Mårten";
+		hundras1.ras = "Shetland Sheepdog";
+		hundras1.age = 8;
+
+		HundRas hundras2 = new HundRas();
+		hundras2.name = "Gringo";
+		hundras2.ras = "FlatCoated retriever";
+		hundras2.age = 14;
+
+		System.out.println(hundras1.ras);
+		System.out.println(hundras2.ras);
+
+	}
+
+}
