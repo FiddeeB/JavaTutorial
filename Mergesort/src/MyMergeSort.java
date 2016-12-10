@@ -1,7 +1,6 @@
 /*
  * Created by fredr on 2016-12-09.
  */
-package com.java2novice.sorting;
 
 class MyMergeSort {
 
