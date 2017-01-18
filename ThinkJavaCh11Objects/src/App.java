@@ -1,6 +1,18 @@
 /**
  * Created by fredr on 2016-12-19.
  */
+class Tile{
+    int value;
+    char letter;
+
+    public Tile(int value, char letter){
+        this.value = value;
+        this.letter = letter;
+    }
+    public printTile(){
+        System.out.println(Tile);
+    }
+}
 class Time{
     int hour, minute;
     double second;
@@ -14,6 +26,13 @@ class Time{
         this.hour = hour;
         this.minute = minute;
         this.second = second;
+    }
+    public Time(double secs){
+        this.hour =(int)(secs / 3600.0);
+        secs -= this.hour * 3600.0;
+        this.minute = (int)(secs / 60);
+        secs -= this.minute *60;
+        this.second = secs;
     }
 }
 
@@ -80,5 +99,10 @@ public class App {
             sum.hour += 1;
         }
         return sum;
+    }
+    public static double convertToSeconds(Time t){
+        int minutes = t.hour * 60 + t.minute;
+        double seconds = minutes * 60 + t.second;
+        return seconds;
     }
 }
